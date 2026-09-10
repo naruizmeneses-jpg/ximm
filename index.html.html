@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de música</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Corazones cayendo -->
+    <div id="hearts-container"></div>
+
+    <div class="pagina">
+
+        <!-- Panel lateral izquierdo -->
+        <aside class="lateral lateral-izq">
+            <img src="img/Simón Petrikov.jpg" alt="miniatura" class="miniatura">
+            <img src="img/simon petrikov (1).jpg" alt="miniatura" class="miniatura">
+            <img src="img/betty.jpg" alt="miniatura" class="miniatura">
+        </aside>
+
+        <!-- Contenido central -->
+        <main class="contenido">
+
+            <section class="portada">
+                <img src="img/petrigrof.jpg" alt="Foto" class="foto-principal">
+                <p class="texto-dedicatoria">
+                    Tal vez en otro universo no fui un completo idiota. Le diría a la antigua Ximena que sufrió por la inmadurez de mi antiguo yo, que me ayudó a evolucionar en lo que soy ahora. Tu ausencia y los problemas que tuve me hicieron recapacitar, y cada día intento ser la versión que esa Ximena se merecía. Unas palabras de disculpa no son suficientes, y sé que el perdón no se pide, se gana. Quiero ganarme tu perdón. En otro universo en el que siguiéramos juntos, te compraría todo lo que estuviera a mi alcance, te adoraría, estaría más tiempo a tu lado y te diría que te amo, disfrutaría cada momento contigo. Ahora, lo que pienso en esta realidad es que no me cuesta nada seguirte amando en silencio y dejarte ser feliz con quien realmente amas; quiero que seas feliz, sin importar si estoy o no. Amo tu rostro, amo tu voz, y cuando haces una pequeña pausa para reírte con delicadeza. Amo tu fuerza para seguir adelante a pesar de que pases por malos momentos. Amo tu inteligencia; podré estudiar y aprender un poco de todo, pero siempre me consideraré inferior a tu inteligencia y tu grandeza es algo que yo apenas puedo imitar. Te quiero mucho xime 
+                </p>
+            </section>
+
+
+            <section class="reproductor">
+                <h2 id="song-title">Título</h2>
+                <p id="song-artist">Artista</p>
+
+                <audio id="audio"></audio>
+
+                <input type="range" id="progress" value="0" min="0" max="100">
+
+                <div class="controles">
+                    <button id="btn-prev">Atrás</button>
+                    <button id="btn-play">▶</button>
+                    <button id="btn-next">Siguiente</button>
+                </div>
+
+                <ul id="playlist" class="playlist"></ul>
+            </section>
+
+        </main>
+
+        <!-- Panel lateral derecho -->
+        <aside class="lateral lateral-der">
+            <img src="img/descarga.jpg" alt="miniatura" class="miniatura">
+            <img src="img/descarga (1).jpg" alt="miniatura" class="miniatura">
+            <img src="img/Betty Grof.jpg" alt="miniatura" class="miniatura">
+        </aside>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
